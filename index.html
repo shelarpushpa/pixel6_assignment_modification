@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { 
+    
+    align-content: center;
+    align-items: center;
+}
+   
+form {   
+    margin: 0 auto;
+    width: 600px;
+    align-content: center;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+
+<!--<h2>HTML Forms</h2>-->
+
+<!-- </script> -->
+<form name="myform" id="myform">
+
+	<div id="fields">
+		<label>FullName:</label><br>
+		<input type="text" id="fname" name="fname" onblur=" fnameValidation()" ><br>
+		<span id="error1"></span><br>
+		<label>Email id:</label><br>
+		<input type="text" id="email" name="email"  onblur="emailValidation()" ><br><br>
+		<span id="error2"></span><br>
+		<label>Phone No:</label><br>
+		<div>
+		<input type="text" id="phno" name="phno" maxlength="10" onkeypress="javascript:return isNumber(event)"  onblur="myFunction1() "><span id="demo1" ></span>&nbsp;<span id="demo2" ></span>
+		</div><br>
+                 <p id="d"></p>
+		<span id="error3"></span><br>
+		
+		<input type="button" name="submit" value="Submit" onclick="validate();" />
+	</div>
+  
+</form>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
