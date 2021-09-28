@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+<div id="otpform">
+<p id="demo"></p>
+<label>Enter OTP</label><br>
+<input type="text" id="otp" name="otp" onkeypress="javascript:return isNumber(event)" oninput="otplen()" ><br>
+ <span id="error"></span><br>
+<input type="button" id="vButton" name="validate" value="Validate" onclick="validate()" />
+</div>
+<span id="success" style="display:none"></span><br>
+<span id="error1" style="display:none"></span><br>
+<script src="t.js"></script>
+</body>
+</html>
